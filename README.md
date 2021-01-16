@@ -1,9 +1,11 @@
 ## miktex (basic ~250mb)
   https://miktex.org/download
+  
   скачать и установить
 
 ## Strawberry Perl (для latexmk и latexindent)
   https://strawberryperl.com/
+  
   скачать и установить 64bit
   
 
@@ -14,10 +16,13 @@
       - latexindent
 
 ## VSCode
-  Extensions
-    установить LaTeX Workshop
-    установить LaTeX Utilities
-    выключить или удалить все остальные, относящиеся к LaTeX
+- Перейти в Extensions
+  
+- установить LaTeX Workshop
+    
+- установить LaTeX Utilities
+    
+- выключить или удалить все остальные, относящиеся к LaTeX
 
 После этого должна работать компиляция (в том числе автоматически при сохранении файла), обычные (не "на лету") сниппеты, и остальные [фишки LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop#features-taster) (например, просмотр pdf во вкладке VSCode с прямым и обратным поиском) и некоторые [фишки LaTeX Utilities](https://github.com/tecosaur/LaTeX-Utilities/#features) (например, вставка таблиц из буфера обмена, скопированных из Excel)
 
