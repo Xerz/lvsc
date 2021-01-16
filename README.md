@@ -2,6 +2,12 @@
   https://miktex.org/download
   
   скачать и установить
+  
+### MikTeX Console (есть в стартовом меню)
+  - Updates -> Check for updates -> Update now
+  - Packages -> Update DB -> "latex" в фильтр -> установить, если не установлены
+      - latexmk
+      - latexindent
 
 ## Strawberry Perl (для latexmk и latexindent)
   https://strawberryperl.com/
@@ -9,24 +15,28 @@
   скачать и установить 64bit
   
 
-## MikTeX Console (есть в стартовом меню)
-  - Updates -> Check for updates -> Update now
-  - Packages -> Update DB -> "latex" в фильтр -> установить, если не установлены
-      - latexmk
-      - latexindent
 
 ## VSCode
+[Страница для скачивания](https://code.visualstudio.com/)
+
+- Скачать, установить, запустить
+
 - Перейти в Extensions
   
-- установить LaTeX Workshop
+- Установить LaTeX Workshop
     
-- установить LaTeX Utilities
+- Установить LaTeX Utilities
     
-- выключить или удалить все остальные, относящиеся к LaTeX
+- Выключить или удалить все остальные, относящиеся к LaTeX
 
 После этого должна работать компиляция (в том числе автоматически при сохранении файла), обычные (не "на лету") сниппеты, и остальные [фишки LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop#features-taster) (например, просмотр pdf во вкладке VSCode с прямым и обратным поиском) и некоторые [фишки LaTeX Utilities](https://github.com/tecosaur/LaTeX-Utilities/#features) (например, вставка таблиц из буфера обмена, скопированных из Excel)
 
-## Настройка latexindent (форматтер)
+### Навигация в VSCode
+При нажатии 'Ctrl+P' откроется строка поиска файлов (открытых и тех что есть в рабочей папке)
+- Если нажать `Ctrl+P` и ввести `@` (или нажать `Ctrl+Shift+O`), то выведется содержание открытого файла, и там можно перейти к интересующей главе или метке
+- Если нажать `Ctrl+P` и ввести `>` (или нажать `Ctrl+Shift+P`), то появится список всех доступных команд. Попробуйте ввести latex и посмотреть команды, которые предоставляют расширения LaTeX Workshop и LaTeX Utilities
+
+### Настройка latexindent (форматтер)
 Запускаем PowerShell и выполняем три команды (этих двух пакетов достаточно при актуальных на 16.01.2021 версии программ и Windows). Если установили Perl не по стандартному пути, измените путь
 
   ```cd C:\Strawberry\perl\bin```
@@ -37,7 +47,7 @@
 
 После этого должны заработать функции `Format document` и `Format selection` в контекстном меню VSCode. С настройками по умолчанию latexindent расставляет табуляцию и пробелы внутри таблиц для лучшей читаемости. 
 
-## Настройка live snippets
+### Настройка live snippets
 LaTeX Utilities предоставляет возможность пользоваться live snippets, это автозамены, срабатывающие при обнаружении определенного кода автоматически. Описание, примеры стандартных, а также как их включить, [тут](https://github.com/tecosaur/LaTeX-Utilities/wiki/Live-Snippets#the-defaults)
 
 - Заходим в настройки (Ctrl+,)
@@ -69,7 +79,3 @@ LaTeX Utilities предоставляет возможность пользов
 
 Для редактирования live snippets используйте команду `Edit Live Snippets File`
 
-## Навигация в VSCode
-При нажатии 'Ctrl+P' откроется строка поиска файлов (открытых и тех что есть в рабочей папке)
-- Если нажать `Ctrl+P` и ввести `@` (или нажать `Ctrl+Shift+O`), то выведется содержание открытого файла, и там можно перейти к интересующей главе или метке
-- Если нажать `Ctrl+P` и ввести `>` (или нажать `Ctrl+Shift+P`), то появится список всех доступных команд. Попробуйте ввести latex и посмотреть команды, которые предоставляют расширения LaTeX Workshop и LaTeX Utilities
